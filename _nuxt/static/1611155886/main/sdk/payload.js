@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/main/sdk", {data:[{},{}],fetch:[],mutations:[]});

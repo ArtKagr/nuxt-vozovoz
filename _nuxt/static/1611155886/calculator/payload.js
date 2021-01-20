@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/calculator", (function(a,b){return {data:[{}],fetch:[],mutations:[[a,b],[a,b]]}}("calculator\u002FSET_STATUS","fetching")));
