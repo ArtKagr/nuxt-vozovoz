@@ -1,0 +1,52 @@
+$xl: 1824px;
+$md: 1224px;
+$sm: 768px;
+$xs: 320px;
+
+$beforeXl: 1823px;
+$beforeMd: 1223px;
+$beforeSm: 767px;
+
+$main-size-half: 8px;
+$subtitle-size: 14px;
+$radio-size: 16px;
+$main-size: 18px;
+$title-size-sm: 20px;
+$title-size: 26px;
+$double-main-size: 36px;
+
+$original-size: 40px;
+$small-size   : 34px;
+$large-size   : 48px;
+
+$primary       : #ec1b22;
+$primary-hover : #cb000a;
+$primary-active: #8b0000;
+
+$vzGray     : #4a4949;
+$vzGray-d1  : #383737; // d1 === dark1
+$vzGray-l1  : #444343;// l1 === light1
+$vzGray-main: #535353;
+$vzGrayLight: #afaeae;
+
+$vzDarkGray : #202020;
+
+$lightGray  : #fafafa;
+$lightGray1 : #f0f0f0;
+$textGray   : #9a9a9a;
+$darkGray   : #d0d0d0;
+$skeletColor: #E0E0E0;
+$layoutGray : #EEEEEE;
+$white      : #FFFFFF;
+$gray       : #979797;
+$label      : #C4C4C4;
+$deepGray   : #e5e5e5;
+
+$defaultBorder : 1px solid $vzGray;
+$borderRadius  : 20px;
+$elementHeight : 40px;
+$elementPadding: 14px;
+
+@function border($color: $vzGray, $type: solid, $width: 1px, ) {
+  @return $width $type $color;
+}

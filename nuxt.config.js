@@ -1,6 +1,10 @@
+const webpack = require('webpack')
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
+  // spa: true,
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -33,8 +37,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    'nuxt-typed-vuex',
   ],
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
@@ -42,11 +46,28 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
-
+  bootstrapVue: {
+    icons: true,
+    bootstrapCSS: false,
+    bootstrapVueCSS: false,
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    // prefix: '/api/',
+    credentials: true,
+    baseURL: process.env.API_URL || 'https://api.vozovoz.xyz',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    cache: false,
+    extractCSS: false,
+    plugins: [
+      new webpack.ProvidePlugin({
+        _: 'lodash',
+        // '$': 'jquery',
+        // ...etc.
+      }),
+    ],
+  },
 }
