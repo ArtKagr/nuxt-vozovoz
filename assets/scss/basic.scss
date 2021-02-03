@@ -1,0 +1,128 @@
+@import './variables';
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &-menu {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $vzGray;
+    margin-bottom: 30px;
+
+    &-items {
+
+      &-link {
+        padding: 8px 0;
+        margin-right: 24px;
+        border-top: 2px solid transparent;
+        cursor: pointer;
+        color: $vzGray;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+          color: $primary;
+        }
+
+        &.-active {
+          border-top: 2px solid $primary;
+        }
+      }
+    }
+
+    &-location {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &-title {
+        margin-right: 8px;
+
+        &.-active {
+          color: $primary;
+        }
+      }
+
+      &-arrow {
+        margin-top: 4px;
+      }
+
+
+    }
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+
+      &-link {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 42px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          text-decoration: none !important;
+        }
+
+        &-text {
+          margin: 0 8px;
+          color: $vzGray;
+          text-decoration: none;
+
+          &.-active {
+            color: $primary;
+          }
+        }
+
+        &-arrow {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  &-submenu {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+
+      &-link {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 42px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &-text {
+          margin: 0 8px;
+
+          &.-active {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  &-subheader {
+    background: $primary;
+    height: 110px;
+    margin-top: 20px;
+  }
+}

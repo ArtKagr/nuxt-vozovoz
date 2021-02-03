@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -265,4 +267,36 @@ html {
 .vz-link {
   color: black;
   font-weight: bold;
+}
+
+.modal_padding {
+  padding: 64px;
+}
+
+.custom_button {
+  cursor: pointer;
+  color: $vzGray;
+
+  &:hover {
+    text-decoration: none;
+    color: $vzGray;
+  }
+
+  &:focus {
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.custom_underline {
+  text-decoration: underline !important;
+}
+
+.primary-color {
+  color: $primary;
+}
+
+.custom_border {
+  border-bottom: 1px solid $vzGray;
 }

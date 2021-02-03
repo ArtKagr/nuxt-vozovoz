@@ -2,9 +2,9 @@ const webpack = require('webpack')
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
-  // spa: true,
-  target: 'static',
+  // ssr: true,
+  mode: 'spa',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

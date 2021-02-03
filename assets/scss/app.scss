@@ -163,3 +163,6 @@ $sizes: map-merge(
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 @import './general';
+@import './variables';
+@import './icons';
+@import './basic';
